@@ -1,0 +1,16 @@
+Elven Forest,Snowy Forest,Hanging Rock Cliff,Drakes Hollow
+Snowy Forest,Elven Forest,Orkish Camp
+Hanging Rock Cliff,Elven Forest,Orkish Camp
+Drakes Hollow,Elven Forest,Dragons Cave
+Orkish Camp,Snowy Forest,Hanging Rock Cliff,Dwarven Deep Mines
+Dragons Cave,Drakes Hollow,Dwarven Surface Mine,Never Sleep Peak
+Dwarven Deep Mines,Orkish Camp,Dwarven Surface Mine,The Dark Stone Temple,Temple of the Red Angel
+Dwarven Surface Mine,Dragons Cave,Dwarven Deep Mines,The Dark Stone Temple,Demonic Caverns
+Never Sleep Peak,Dragons Cave
+Demonic Caverns,Dwarven Surface Mine
+The Dark Stone Temple,Dwarven Deep Mines,Dwarven Surface Mine,Temple of the Red Angel,Eclipse Pathway
+Temple of the Red Angel,Heaven,Under World,Dwarven Deep Mines,The Dark Stone Temple,Eclipse Pathway
+Heaven,Temple of the Red Angel
+Under World,Temple of the Red Angel
+Eclipse Pathway,Temple of the Red Angel,The Dark Stone Temple,Eclipse Mountain
+Eclipse Mountain,Eclipse Pathway

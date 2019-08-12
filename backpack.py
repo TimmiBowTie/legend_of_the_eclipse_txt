@@ -1,0 +1,2 @@
+class backpack:
+    pass
