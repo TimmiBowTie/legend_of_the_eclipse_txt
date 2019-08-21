@@ -131,7 +131,9 @@ class character:
         :return: na
         """
         if type == "r" and self.armour != 0:
-            self.health = self.health - (preDMG*self.armour)
+            check = preDMG - self.armour
+	    if check > 0:
+	        self.health -= check
         elif type == "r" and self.armour == 0:
             self.health -= preDMG
         elif type == "p":
