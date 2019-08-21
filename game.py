@@ -4,6 +4,7 @@ Author: TimmiBowTie
 """
 
 from map import map
+import character
 
 def intro():
     charName = ""

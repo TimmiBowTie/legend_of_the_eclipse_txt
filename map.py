@@ -1,5 +1,6 @@
 # needs testing major
 # seems functonal
+
 class map:
 
     def _loadMap_(self):
@@ -16,23 +17,22 @@ class map:
         #NEEDS OPTIMIZATION
         info = self._loadMap_()
 
-        a = map_node(info[0][0], None)
-
-        b = map_node(info[1][0], None)
-        c = map_node(info[2][0], None)
-        d = map_node(info[3][0], None)
-        e = map_node(info[4][0], None)
-        f = map_node(info[5][0], None)
-        g = map_node(info[6][0], None)
-        h = map_node(info[7][0], None)
-        i = map_node(info[8][0], None)
-        j = map_node(info[9][0], None)
-        k = map_node(info[10][0], None)
-        l = map_node(info[11][0], None)
-        m = map_node(info[12][0], None)
-        n = map_node(info[13][0], None)
-        o = map_node(info[14][0], None)
-        p = map_node(info[15][0], None)
+        a = mapNode(info[0][0], None)
+        b = mapNode(info[1][0], None)
+        c = mapNode(info[2][0], None)
+        d = mapNode(info[3][0], None)
+        e = mapNode(info[4][0], None)
+        f = mapNode(info[5][0], None)
+        g = mapNode(info[6][0], None)
+        h = mapNode(info[7][0], None)
+        i = mapNode(info[8][0], None)
+        j = mapNode(info[9][0], None)
+        k = mapNode(info[10][0], None)
+        l = mapNode(info[11][0], None)
+        m = mapNode(info[12][0], None)
+        n = mapNode(info[13][0], None)
+        o = mapNode(info[14][0], None)
+        p = mapNode(info[15][0], None)
 
         a.addConn([b, c, d])
         b.addConn([a, e])
@@ -68,7 +68,7 @@ class map:
        return self.currNode.__str__()
 
 
-class map_node:
+class mapNode:
     def __init__(self, currLocation, nextNodes = None):
         self.currLocation = currLocation
         self.nextNodes = nextNodes

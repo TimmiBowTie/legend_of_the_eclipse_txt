@@ -1,0 +1,34 @@
+ modifiers
+
+1
+Weakness to Magic (+10% magic dmg taken)
+
+2
+Weakness to physical (+10% to physical dmg taken)
+
+3
+diseased (discipline - 4, charisma - 5, constit - 3, strength - 2, wisdom - 1, stealth - 4)
+
+4
+keen eye (see class and race of inidividuals, chance to see through disguises)
+
+5
+stubby (reduces speed during speed checks for battle (-5 speed))
+
+
+race modifiers
+angel 
+(+10 charisma with angels and humans, - 10 charisma with demons and wizards and orks)
+
+
+demon 
+(+10 charisma with orks and demons, - 10 charisma with humans, elfs, angels, wizards)
+
+
+elf 
+(+5 charisma with elfs, -5 charisma with dwarfs, speech with animals availible, keen eye )
+
+dwarf
+(+5 charisma with dwarfs, stubby)
+
+

@@ -1,0 +1,51 @@
+Classes Basic
+-Ranger -------
+-Assassin ---------
+-Rogue -------------
+-Arcane knight-------
+-Warrior ----------
+-Wizard -------
+
+Classes Special
+-Angelic Knight (Angel)
+-Arch Angel (Deamon) 
+-Dwarven War Master (Dwarf)
+-Templar (Human)
+-Ork Battle Master (Ork)
+
+each class gives 9 pts overall
+special classes completly reset stats 
+
+-Elven Ranger (Elf)
+
+all have unique speech check and dialog options
+-------------------------------------------------
+
+magic (effects mana pool and dmg for spells):
+Arcane Knight (2pts), Wizard (6pts),
+
+wisdom (chance for crits, as well as exp gained fromreading class books, for mages affcts magic crits (less dmg and less chance)):
+Ranger(2pts), Assassin (4pts), Rogue(2pts), Warrior (1pts), Arcane Knight(1pt), Wizard(3pts)
+
+strength (for physical dmg calc, and if can use armour/weapon, how many items can be carriede):
+Warrior (4pts), Arcane Knight (3pts)
+
+
+discipline (meele accurracy and ranged accuracy):
+Ranger(3pts), Warrior (2pts), Arcnae Knight(2pts)
+
+dexterity (used in evasion calculation, and some armour, effects placement in order of attacks)
+Ranger(3pts), Assassin (3pts), Rogue(3pts)
+
+stealth (used for sneak checks)
+Ranger(1pts), Assassin (2pts), Rogue(4pts)
+
+charisma (used for speech checks)
+
+
+constit (determines health pool)
+Warrior(2pts), Arcane Knight (1 pt)
+
+
+
+
