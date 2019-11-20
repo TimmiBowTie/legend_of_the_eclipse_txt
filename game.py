@@ -4,7 +4,7 @@ Author: TimmiBowTie
 """
 
 from map import map
-import character as ch
+import character
 
 def intro():
     charName = ""
@@ -122,5 +122,4 @@ mapSet = map()
 
 mapSet.move("Snowy Forest")
 
-character1 = ch("jim", "")
 
