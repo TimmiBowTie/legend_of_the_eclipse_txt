@@ -132,8 +132,8 @@ class character:
         """
         if type == "r" and self.armour != 0:
             check = preDMG - self.armour
-	    if check > 0:
-	        self.health -= check
+        if check > 0:
+            self.health -= check
         elif type == "r" and self.armour == 0:
             self.health -= preDMG
         elif type == "p":
@@ -172,6 +172,7 @@ class character:
         pass
 
     #leveling
+    #note leveling up is done post combat
 
     def addExp(self, exp):
         self.exp += exp
@@ -182,12 +183,104 @@ class character:
             #exp to lvl up 50
             if self.exp >= 50:
                 self.exp -= 50
-                self._lvlUp_()
-        elif self.level == 1:
+                self._lvlUp_(0)
+        elif self.level >= 1 and self.level <= 10:
             #exp to lvl up 100
             if self.exp >= 100:
                 self.exp -= 100
-                self._lvlUp_()
+                self._lvlUp_(1)
+        elif self.level >= 11 and self.level <= 20:
+            #exp to lvl up 200
+            if self.exp >= 200:
+                self.exp -= 200
+                self._lvlUp_(2)
+        elif self.level >= 21 and self.level <= 30:
+            #exp to lvl up 300
+            if self.exp >= 300:
+                self.exp -= 300
+                self._lvlUp_(3)
+        elif self.level >= 31 and self.level <= 40:
+            #exp to lvl up 400
+            if self.exp >= 400:
+                self.exp -= 400
+                self._lvlUp_(4)
+        elif self.level >= 41 and self.level <= 50:
+            #exp to lvl up 500
+            if self.exp >= 500:
+                self.exp -= 500
+                self._lvlUp_(5)
 
-    def _lvlUp_(self):
-        pass
+
+
+    def _lvlUp_(self, tier):
+        print("**********************")
+        print("You leveled up!")
+
+        avPoints = 0
+
+        if tier == 0:
+            avPoints = 5
+        elif tier == 1:
+            avPoints = 3
+        elif tier == 2:
+            avPoints = 4
+        elif tier == 3:
+            avPoints = 5
+        elif tier == 4:
+            avPoints = 5
+        elif tier == 5:
+            avPoints = 5
+
+        for i in range(avPoints):
+            print("You have {} points avilible!".format(avPoints))
+
+            print()
+            print("Current stats:")
+            print("1. Magic        : ", self.magic)
+            print("2. Wisdom       : ", self.wisdom)
+            print("3. Strength     : ", self.strength)
+            print("4. Discipline   : ", self.discipline)
+            print("5. Dexterity    : ", self.dexterity)
+            print("6. Stealth      : ", self.stealth)
+            print("7. Charisma     : ", self.charisma)
+            print("8. Constitution : ", self.constit)
+            print()
+
+            print("To add points to a stat type stat# then a space then the amount of points you want to add (up to {} points)".format(avPoints))
+            userIn = str(input("Enter: "))
+            stat, val = userIn.split(" ")
+            stat = int(stat)
+            val = int(val)
+
+            if val <= avPoints and val >= 0 and stat > 0 and stat <= 8:
+                if stat == 1:
+                    self.magic += val
+                    avPoints -= val
+                elif stat == 2:
+                    self.wisdom += val
+                    avPoints -= val
+                elif stat == 3:
+                    self.strength += val
+                    avPoints -= val
+                elif stat == 4:
+                    self.discipline += val
+                    avPoints -= val
+                elif stat == 5:
+                    self.dexterity += val
+                    avPoints -= val
+                elif stat == 6:
+                    self.stealth += val
+                    avPoints -= val
+                elif stat == 7:
+                    self.charisma += val
+                    avPoints -= val
+                elif stat == 8:
+                    self.constit += val
+                    avPoints -= val
+
+            if avPoints == 0:
+                break
+
+        print("**********************")
+
+
